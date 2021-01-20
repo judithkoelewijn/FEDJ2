@@ -1,0 +1,1351 @@
+/* algemeen */
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+}
+
+
+.leesmeer {
+    color: black;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* algemene opmaak elementen over beide pagina's */
+
+
+article {
+
+    min-width: 30vw;
+    margin: 1vw;
+}
+
+
+
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #72bfcf;
+}
+
+a:hover {
+    color: #4b8d9b;
+}
+
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 105%;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+h3 {
+    font-family: 'Castoro', serif;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    margin-right: 5%;
+
+}
+
+
+p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+
+
+/* verstoppen van heading 1 (via A11y project) */
+
+
+
+h1 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+
+/* header en body */
+
+
+
+
+body {
+    position: relative;
+}
+
+
+
+/* navigatie */
+
+
+
+.nav-links {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+
+
+#navigatie {
+    margin-right: 10%;
+}
+
+
+#navigatie ul li {
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    margin-left: 0;
+    font-size: 1.1em;
+
+
+
+}
+
+#navigatie ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+
+
+}
+
+
+
+/* positionering button en logo */
+
+
+#hamburgerknop {
+    border-style: none;
+    background-color: transparent;
+    margin-right: 2em;
+    z-index: 1;
+    margin-top: 2%;
+    margin-right: 2%;
+
+}
+
+
+header a img {
+    max-height: 8vh;
+    max-width: 24vw;
+    margin-left: 4vw;
+    margin-top: 2vh;
+}
+
+
+header h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+header a {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+.logobutton {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+
+
+.logobutton>a {
+    margin-top: 3%;
+}
+
+.logobutton>img {
+    max-height: 8vh;
+    max-width: 24vw;
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+
+.logobutton>h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+
+/* active class (geactiveerd door Javascript bij toggle hamburger button */
+
+
+
+.active {
+    z-index: 1;
+    opacity: 1;
+    background-color: #72bfcf;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    overflow-x: hidden;
+
+}
+
+/* container elements + grid elements */
+
+
+.highlightimage img {
+    object-fit: cover;
+    width: 95%;
+    max-height: 100%;
+}
+
+.grid1 {
+    grid-area: grid1;
+    background-image: url(images/lavendel2.jpg);
+}
+
+.grid2 {
+    grid-area: grid2;
+    background-image: url(images/e-book\ copy.png);
+}
+
+.grid3 {
+    grid-area: grid3;
+    background-image: url(images/portret-vrouw.png);
+
+}
+
+
+/* gelijke opmaak voor grid 1-3  */
+
+.grid1-3 {
+    max-width: 100%;
+    background-size: cover;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 3em;
+}
+
+.grid1-3 h2 {
+    margin-left: 2%;
+}
+
+.grid1-3 h3 {
+    margin-left: 2%;
+    color: white;
+}
+
+/* gelijke opmaak voor grid 4-6 */
+
+.grid4-6 {
+    background-color: #f3f3f3;
+    padding: 0;
+    margin-top: 5%;
+    padding-bottom: 5vh;
+}
+
+.grid4-6 img {
+    width: 100%;
+}
+
+.grid4-6:hover h3,
+.grid7-9:hover h3 {
+    color: #ed6c5d;
+}
+
+.grid4-6 h2,
+.grid4-6 h3,
+.grid4-6 p {
+    color: black;
+    margin-left: 2%;
+}
+
+.grid4-6 a {
+    color: #72bfcf;
+    margin-left: 2%;
+}
+
+
+/* gelijke opmaak grid 7-9 */
+
+
+.grid7-9 {
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f3f3;
+    margin-top: 5%;
+    padding: 0;
+}
+
+
+
+
+.grid7-9 h2,
+h3 {
+    color: black;
+}
+
+
+.grid7-9 a {
+    color: #72bfcf;
+}
+
+
+.grid7-9 h2,
+h3,
+p,
+a {
+    margin-left: 5%;
+}
+
+
+
+
+/* positionering grid template */
+
+
+.grid-container {
+    padding: 2em;
+    padding-bottom: 0;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-areas:
+        "grid1"
+        "grid2"
+        "grid3"
+        "grid4"
+        "grid5"
+
+    ;
+}
+
+.grid-container2 {
+    padding: 2em;
+    display: grid;
+    padding-top: 0;
+    grid-gap: 2em;
+    grid-template-areas:
+        "leesmeer"
+        "grid6"
+        "grid7"
+        "grid8"
+        "grid9"
+
+
+    ;
+}
+
+
+/* verwijzing grid template area en element uit HTML */
+
+.grid4 {
+    grid-area: grid4;
+}
+
+
+.grid5 {
+    grid-area: grid5;
+}
+
+
+.grid6 {
+    grid-area: grid6;
+}
+
+.grid7 {
+    grid-area: grid7;
+
+}
+
+.grid8 {
+    grid-area: grid8;
+}
+
+
+.grid9 {
+    grid-area: grid9;
+}
+
+
+
+
+/* media queries voor positionering grid n.a.v. device width */
+
+@media (min-width:550px) {
+    .ul1 {
+        margin-top: 5.5%;
+        margin-right: 12%;
+
+    }
+}
+
+@media (min-width:650px) {
+    .grid-container {
+
+        padding: 2em;
+        padding-bottom: 0;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-areas:
+            "grid1 grid1"
+            "grid1 grid1"
+            "grid2 grid3"
+            "grid4 grid5"
+
+        ;
+    }
+
+    .grid7,
+    .grid8 {
+        max-height: 50vh;
+
+
+    }
+
+
+    .grid-container2 {
+        padding-top: 0;
+        display: grid;
+        grid-gap: 2em;
+        grid-template-areas:
+            "leesmeer leesmeer"
+            "grid6 grid7"
+            "grid6 grid8"
+            "grid6 grid9"
+
+
+        ;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media (min-width:900px) {
+    .nav-links {
+        font-size: 125%;
+    }
+}
+
+
+@media (min-width:1000px) {
+    .nav-links {
+        font-size: 135%;
+    }
+}
+
+
+@media (max-width:750px) {
+
+    nav {
+        position: fixed;
+        min-width: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: .30s ease-in;
+
+    }
+
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #navigatie ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        position: absolute;
+        margin-left: 40%;
+        padding: 0;
+
+
+    }
+
+    #navigatie ul li a {
+        font-size: 150%;
+        color: white;
+    }
+
+    #navigatie ul li a:hover {
+        font-size: 150%;
+        color: #ed6c5d;
+
+    }
+
+    nav {
+        opacity: 0;
+        z-index: 1;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pagina 2 (meest gelezen artikelen van 2020 */
+
+
+.logobutton a img {
+    max-height: 8vh;
+    max-width: 24vw;
+}
+
+
+/* opmaak header afbeelding */
+
+
+.afbeelding2020 {
+    background-image: url(images/2020.png);
+    min-height: 45vh;
+    background-size: cover;
+    margin-top: 3%;
+    padding: 0;
+
+}
+
+.afbeelding2020 article {
+    padding: 1%;
+}
+
+.afbeelding2020 article h3 {
+    margin-top: 40%;
+    font-size: 190%;
+    color: white;
+
+}
+
+.afbeelding2020 article a {
+    color: white;
+
+}
+
+
+
+/* opmaak leestijd en like button */
+
+
+.introtekst p {
+    margin-top: 4%;
+    font-weight: bold;
+}
+
+.leestijd {
+
+    margin-top: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.leestijd h2 {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.leestijd h4 {
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+.hartje {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.hartje img {
+    max-height: 5vh;
+    max-width: 8vw;
+
+
+}
+
+.hartje:hover img {
+    transform: scale(1.2);
+}
+
+
+.hartje a {
+    color: black;
+    font-weight: bold;
+    padding: 4%;
+}
+
+
+/* opmaak grid items en positionering */
+
+
+.item9-10 {
+    margin-top: 8%;
+
+
+}
+
+.item9-10 h2 {
+    color: black;
+    font-family: 'Castoro', serif;
+    font-size: 160%;
+    margin-left: 0;
+    margin-bottom: 4%;
+
+}
+
+
+.item9-10 a {
+    font-weight: bold;
+}
+
+
+.leestijd,
+.introtekst,
+.grid-items {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+article>.introtekst {
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 0;
+}
+
+.introtekst p,
+.grid-items p,
+.grid-items a {
+    margin-left: 0;
+}
+
+.grid-items {
+    margin-top: 8%;
+}
+
+.grid-items h2 {
+    color: black;
+    font-family: 'Castoro', serif;
+    font-size: 140%;
+
+}
+
+
+/* opmaak kort */
+
+
+
+.kort {
+    display: flex;
+    flex-direction: row;
+    background-color: #f3f3f3;
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+
+}
+
+.kort h2,
+.kort h3 {
+    color: black;
+    margin-left: 4%;
+}
+
+.kort img {
+    max-width: 100%;
+}
+
+
+
+
+/* verwijzingen voor grid */
+
+
+.nummer1 {
+    grid-area: nummer1;
+}
+
+.nummer2 {
+    grid-area: nummer2;
+}
+
+.nummer3 {
+    grid-area: nummer3;
+}
+
+
+.nummer4 {
+    grid-area: nummer4;
+}
+
+
+.nummer5 {
+    grid-area: nummer5;
+}
+
+
+.nummer6 {
+    grid-area: nummer6;
+}
+
+.nummer7 {
+    grid-area: nummer7;
+}
+
+
+.nummer8 {
+    grid-area: nummer8;
+}
+
+.nummer9 {
+    grid-area: nummer9;
+}
+
+
+.nummer10 {
+    grid-area: nummer10;
+}
+
+.afbeelding2020 {
+    grid-area: afbeelding2020;
+}
+
+.leestijd {
+    grid-area: leestijd;
+}
+
+.introtekst {
+    grid-area: introtekst;
+}
+
+
+.leesmeer {
+    grid-area: leesmeer;
+}
+
+
+.kort-geluk-test {
+    grid-area: kort-geluk-test;
+}
+
+.kort-bellen {
+    grid-area: kort-bellen;
+}
+
+.kort-dwarszitten {
+    grid-area: kort-dwarszitten;
+}
+
+.kort-omarmen {
+    grid-area: kort-omarmen;
+}
+
+
+
+
+/* footer */
+
+
+
+
+footer {
+    min-height: 50vh;
+    min-width: 100vw;
+    background-color: #d2ebf1;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+
+.ul1,
+.ul2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.ul2 {
+    margin-top: 5%;
+}
+
+.ul1 {
+    margin-top: 5.5%;
+
+}
+
+.ul2:nth-child(2) {
+    margin-top: 14.5%;
+}
+
+footer h2 {
+
+    margin-top: 3%;
+    font-size: 130%;
+    color: #ed6c5d;
+    margin-left: 3%;
+}
+
+
+
+footer ul {
+    min-width: 15vw;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 8%;
+    font-size: 100%;
+    margin-bottom: 15%;
+
+}
+
+footer ul li a {
+    font-size: 110%;
+}
+
+
+footer a:hover {
+    color: #ed6c5d;
+}
+
+
+
+
+
+@media (min-width:750px) {
+
+
+    #hamburgerknop {
+        display: none;
+    }
+
+    .nav-links {
+        font-size: 115%;
+    }
+
+    #navigatie {
+        margin-left: 5%;
+    }
+
+    header a img {
+        margin-left: 7vw;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        min-height: 22vh;
+
+    }
+
+
+    .ul1,
+    .ul2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .ul1>ul,
+    .ul2>ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 11%;
+    }
+
+    .ul2:nth-child(2) {
+        margin-top: 11%;
+    }
+
+    .ul2 {
+        margin-top: 6.5%;
+    }
+
+    .ul1 {
+        margin-right: 5%;
+    }
+
+
+
+
+    @media (min-width:950px) {
+
+
+        .grid-container {
+
+            padding: 2em;
+            padding-bottom: 0;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-areas:
+                "grid1 grid1"
+                "grid1 grid1"
+                "grid2 grid3"
+                "grid4 grid5"
+
+            ;
+
+
+        }
+
+        .ul1,
+        .ul2 {
+            margin-left: 8%;
+        }
+
+
+        .grid-container2 {
+            padding-top: 0;
+            display: grid;
+            grid-gap: 2em;
+            grid-template-areas:
+                "leesmeer leesmeer"
+                "grid6 grid7"
+                "grid6 grid8"
+                "grid6 grid9"
+
+
+            ;
+        }
+
+
+
+        h3 {
+            font-size: 150%;
+        }
+
+        h2 {
+            font-size: 110%;
+        }
+
+
+        .grid7-9 {
+            max-height: 30vh;
+        }
+
+        .grid1 {
+            min-height: 50vh;
+        }
+
+
+        footer ul {
+            margin-right: 4%;
+
+
+        }
+
+        footer ul li {
+            font-size: 110%;
+        }
+
+        .ul1,
+        .ul2 {
+            margin-left: 2%;
+        }
+
+        .ul2 {
+            margin-top: 5.5%;
+        }
+
+        /* media query voor navigatie en gebruik hamburgermenu */
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    /* media queries grid pagina 2 */
+
+    @media (max-width:650px) {
+        .grid2020 {
+
+            display: grid;
+
+            grid-template-areas:
+                "afbeelding2020"
+                "leestijd"
+                "introtekst"
+                "nummer10"
+                "nummer9"
+                "nummer8"
+                "nummer7"
+                "nummer6"
+                "nummer5"
+                "nummer4"
+                "nummer3"
+                "nummer2"
+                "nummer1"
+                "leesmeer"
+                "kort-geluk-test"
+                "kort-bellen"
+                "kort-dwarszitten"
+                "kort-omarmen"
+
+
+            ;
+        }
+
+        .afbeelding2020 {
+            background-image: url(images/2020.png);
+            min-height: 45vh;
+            background-size: cover;
+            margin-top: 3%;
+            padding: 0;
+            min-width: 100vw;
+
+        }
+
+
+    }
+
+
+
+
+
+    @media (min-width: 700px) and (max-width: 1000px) {
+        .grid2020 {
+
+            display: grid;
+
+            grid-template-areas:
+                "afbeelding2020"
+                "leestijd"
+                "introtekst"
+                "nummer10"
+                "nummer9"
+                "nummer8"
+                "nummer7"
+                "nummer6"
+                "nummer5"
+                "nummer4"
+                "nummer3"
+                "nummer2"
+                "nummer1"
+                "leesmeer"
+                "kort-geluk-test"
+                "kort-bellen"
+                "kort-dwarszitten"
+                "kort-omarmen"
+
+
+            ;
+        }
+
+        .leestijd,
+        .introtekst,
+        .grid-items,
+        .kort {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+
+
+
+    @media (min-width:780px) {
+        .afbeelding2020 {
+            background-image: url(images/2020.png);
+            min-height: 45vh;
+            background-size: cover;
+            margin-top: 3%;
+            padding: 0;
+            max-width: 90vw;
+            margin-left: 5%;
+
+        }
+
+        .grid-items img {
+            min-width: 100%;
+        }
+
+        .grid-items h2 {
+            color: black;
+            font-family: 'Castoro', serif;
+            font-size: 180%;
+
+        }
+
+
+    }
+
+    @media (min-width:1000px) {
+
+
+        .afbeelding2020 h3 {
+            font-size: 150%;
+        }
+
+        .grid2020 {
+
+            display: grid;
+
+
+            grid-template-areas:
+
+                "afbeelding2020 afbeelding2020"
+                "leestijd leestijd"
+                "introtekst introtekst"
+                "nummer10 nummer10"
+                "nummer9 nummer9"
+                "nummer8 nummer8"
+                "nummer7 nummer7 "
+                "nummer6 nummer6"
+                "nummer5 nummer5"
+                "nummer4 nummer4"
+                "nummer3 nummer3"
+                "nummer2 nummer2"
+                "nummer1 nummer1"
+                "leesmeer leesmeer"
+                "kort-bellen kort-dwarszitten"
+                "kort-geluk-test kort-omarmen"
+
+
+
+            ;
+        }
+
+        .kort {
+            max-height: 30vh;
+            margin-top: 5%;
+            margin-left: 8%;
+            margin-right: 8%;
+        }
+
+
+        .afbeelding2020 {
+            background-image: url(images/2020.png);
+            min-height: 45vh;
+            background-size: cover;
+            margin-top: 3%;
+            padding: 0;
+            max-width: 90vw;
+            margin-left: 5%;
+
+        }
+
+        .leestijd,
+        .introtekst,
+        .grid-items {
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+
+        .kort-geluk-test,
+        .kort-bellen {
+            margin-left: 13%;
+            margin-right: 1%;
+        }
+
+
+        .kort-omarmen,
+        .kort-dwarszitten {
+            margin-right: 13%;
+            margin-left: 1%;
+        }
+
+
+
+
+    }
+
+
+
+    @media (min-width:1200px) {
+
+        .afbeelding2020 article h3 {
+            font-size: 300%;
+        }
+
+        .grid2020 {
+
+
+
+            display: grid;
+
+
+
+
+            grid-template-areas:
+                "afbeelding2020 afbeelding2020"
+                "leestijd leestijd"
+                "introtekst introtekst"
+                "nummer10 nummer10"
+                "nummer9 nummer9"
+                "nummer8 nummer8"
+                "nummer7 nummer7 "
+                "nummer6 nummer6"
+                "nummer5 nummer5"
+                "nummer4 nummer4"
+                "nummer3 nummer3"
+                "nummer2 nummer2"
+                "nummer1 nummer1"
+                "leesmeer leesmeer"
+                "kort-bellen kort-dwarszitten"
+                "kort-geluk-test kort-omarmen"
+
+
+
+            ;
+        }
+
+        .leestijd,
+        .introtekst,
+        .grid-items {
+            margin-left: 13%;
+            margin-right: 13%;
+        }
+
+        .kort-geluk-test,
+        .kort-bellen {
+            margin-left: 13%;
+            margin-right: 1%;
+        }
+
+
+        .kort-omarmen,
+        .kort-dwarszitten {
+            margin-right: 13%;
+            margin-left: 1%;
+        }
+
+
+        .afbeelding2020 {
+            background-image: url(images/2020.png);
+            min-height: 45vh;
+            background-size: cover;
+            margin-top: 3%;
+            padding: 0;
+            max-width: 90vw;
+            margin-left: 5%;
+
+        }
+
+    }
+
+
+    /* focus styling */
+
+    a:focus {
+        color: #ed6c5d;
+        outline: none;
+        border-color: #719ECE;
+        border: 2px solid;
+    }
+
+
+
+    nav ul li a:focus {
+        color: #ed6c5d;
+        border: 2px solid;
+        max-height: 5vh;
+    }

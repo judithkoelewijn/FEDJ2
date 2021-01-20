@@ -1,7 +1,31 @@
 # Procesverslag
 **Auteur:** Judith Koelewijn
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
+
+
+## Eindgesprek (week 7/8)
+
+Het eerste eindgesprek ging goed, ik merkte dat de mondeling datum al best snel was, en ik in mijn laatste dagen
+hiervoor nog veel heb gedaan om het bij elkaar te krijgen. Bij de eerste mondeling heb ik en 6 gehaald, maar ik heb
+ervoor gekozen om mijn cijfer op te hogen. Ik heb de week erna elke dag wat aanpassingen gedaan tot ik het passend vond. 
+
+Aangepast:
+
+- Overbodige sections verwijderd uit heading 
+- Padding en margin overal gelijk maken / soepeler laten verlopen
+- Aller overbodige sections verwijderd uit grid: ik had eerst een section waar een article in zat, nu heb ik alleen
+  nog de articles. Dit was een hele klus omdat alle styling hiermee veranderde, maar eenmaal aangepast stukken beter. 
+- Een stukje gaan werken met :nth-of-type / first-child / last-item. Waar ik in sommige delen extra sections wilde toevoegen heb ik
+  dit nu hiermee geselecteerd. Voorkomt overbodige sections. 
+- Footer aangepast: deze was overal rijen onderelkaar. Nu bij mobile twee rijen van twee, bij web vier rijen naast elkaar en responsive. 
+- Focus state aangepast: de borders van de focus state waren heel groot, nu heb ik ze volledig passend gemaakt zodat dit er beter uitziet. 
+- Het document een naam gegeven van de pagina: voor bovenin het tabje van Chrome
+- Een favorite icon toegevoegd voor in de balk bij Chrome met het logo van de website
+
+Na al deze aanpassingen lever ik erg tevreden mijn site in. Ik ben blij dat ik toch nog ben gaan verbeteren en finetunen, 
+omdat ik bij het eerste gesprek voor mijn gevoel het nog niet af had / tijd tekort had. Nu voelt het compleet, en af. 
+En ik denk dat dat natuurlijk ook alleen maar verbetering geeft voor mijzelf en ik daar weer van heb geleerd. 
+
 
 
 
@@ -11,10 +35,6 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. https://css-tricks.com/three-line-menu-navicon/
 
 
-
-## Eindgesprek (week 7/8)
-
--dit ging goed & dit was lastig-
 
 **Screenshot(s):**
 
